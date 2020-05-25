@@ -14,7 +14,7 @@ torch=1.4.0; tqdm=4.27.0; tensorboardX=1.8; pandas=0.25; numpy=1.15; networkx=2.
 (1) Note that some of the codes may be redundant and are not useful, we will polish them later.  
 (2) Note that some of the code are based on others, so the same arguement in different .py files may have different meanings.   
 (3) Note that the following comands consist of both training and evaluation, if you do not want to train Ours, you can directly use the trained models we provided in xxxx/src/saved_models/.  
-Then, you can put is under xxxxxxxxxx/src/  , so that you can have xxxxxxx/src/saved_models/. Finally, you can directly check the ############################### Evaluation for Ours ######################################## part.   
+Then, you can directly check the ############################### Evaluation for Ours ######################################## part and run the evaluation results.   
 For example:   
 --> CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervisd.py --dataset=pubmed --sampling_percent=0.7 --type=multigcn --nbaseblocklayer=0 --nce_k=1024 --nce_t=0.1  
 --> CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervisd.py --dataset=facebook_page --sampling_percent=0.7 --type=multigcn --nbaseblocklayer=0 --nce_k=1024 --nce_t=0.1  
