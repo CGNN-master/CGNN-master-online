@@ -12,7 +12,7 @@ torch=1.4.0; tqdm=4.27.0; tensorboardX=1.8; pandas=0.25; numpy=1.15; networkx=2.
 
 3. Notes:  
 (1) Note that some of the codes may be redundant and are not useful, we will polish them later.  
-(2) Note that some of the code are based on others, so the same arguement in different .py files may have different meanings.   
+(2) Note that some of the codes are based on others, so the same arguement in different .py files may have different meanings.   
 (3) Note that the following comands consist of both training and evaluation, if you do not want to train Ours, you can directly use the trained models we provided in xxxx/src/saved_models/.  
 Then, you can directly check the ############################### Evaluation for Ours ######################################## part and run the evaluation results.   
 For example:   
@@ -219,6 +219,6 @@ Ours(GraphSage): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_grap
 Ours(GAT): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_gat.py --dataset=coauthor_phy --sampling_percent=0.7 --nhiddenlayer=1 --nce_k=1024 --nce_t=0.1  
 
 
-Thanks for your interest on our paper. We benefit a lot from codes provided by other researchers, we would like to thank them here.  
+Thanks for your interest in our paper. We benefit a lot from codes provided by other researchers, we would like to thank them here.  
 
 Also, this paper is under review now, we will provide more information later.  
