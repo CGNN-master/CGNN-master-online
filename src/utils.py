@@ -450,22 +450,6 @@ def load_coauthor_phy_data(normalization="AugNormAdj", porting_to_torch=True, da
     val_index = all_index[20000:25000]
     test_index = all_index[25000:]
 
-    # if not os.path.exists(os.path.join(data_path, 'coauthor_phy', 'train_index.npy')):
-    #     print('make split data......')
-    #     all_index = shuffle(np.arange(len(labels)), random_state=42)
-    #     train_index = all_index[:15000]
-    #     val_index = all_index[15000:20000]
-    #     test_index = all_index[20000:]
-
-    #     np.save(os.path.join(data_path, 'coauthor_phy', 'train_index.npy'), train_index)
-    #     np.save(os.path.join(data_path, 'coauthor_phy', 'val_index.npy'), val_index)
-    #     np.save(os.path.join(data_path, 'coauthor_phy', 'test_index.npy'), test_index)
-    # else:
-    #     print('load split data......')
-    #     train_index = np.load(os.path.join(data_path, 'coauthor_phy', 'train_index.npy'))
-    #     val_index = np.load(os.path.join(data_path, 'coauthor_phy', 'val_index.npy'))
-    #     test_index = np.load(os.path.join(data_path, 'coauthor_phy', 'test_index.npy'))
-
     train_adj = adj[train_index, :][:, train_index]
     degree = np.sum(train_adj, axis=1)
 
