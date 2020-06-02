@@ -280,10 +280,6 @@ def set_seed(seed, cuda):
     torch.manual_seed(seed)
     if cuda: torch.cuda.manual_seed(seed)
 
-
-
-
-
 def load_facebook_page_data(normalization, porting_to_torch, data_path=None):
     edges = pd.read_csv(os.path.join(data_path, 'facebook_page', 'musae_facebook_edges.csv'), header=0, sep=',')
     raw_feats = json.load(open(os.path.join(data_path, 'facebook_page', 'musae_facebook_features.json'), 'r'))
@@ -478,8 +474,6 @@ def load_coauthor_phy_data(normalization="AugNormAdj", porting_to_torch=True, da
     learning_type = "inductive"
     return adj, train_adj, features, train_features, labels, train_index, val_index, test_index, degree, learning_type
 
-
-    
 def data_loader(dataset, data_path=datadir, normalization="AugNormAdj", porting_to_torch=True, task_type = "full"):
     if dataset == 'facebook_page':
         return load_facebook_page_data(normalization, porting_to_torch, data_path)
