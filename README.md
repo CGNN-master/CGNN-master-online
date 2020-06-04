@@ -12,7 +12,7 @@ python3.5; pytorch=1.4.0; tqdm=4.27.0; tensorboardX=1.8; pandas=0.25; numpy=1.15
 
 3. Notes:  
 (1) Note that some of the codes may be redundant and are not useful, we will polish them later.  
-(2) Note that some of the codes are based on others, so the same arguement in different .py files may have different meanings.   
+(2) Note that some of the codes are based on different released codes, so the same arguement in different .py files may have different meanings.   
 (3) Note that the following comands consist of both training and evaluation, if you do not want to train Ours, you can directly use the trained models we provided in xxxx/src/saved_models/.  
 Then, you can directly check the ############################### Evaluation for Ours ######################################## part and run the evaluation results.   
 For example:   
