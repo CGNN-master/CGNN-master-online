@@ -1,5 +1,6 @@
 # CGNN-master
-This is a Pytorch implementation of our Contrastive Graph Neural Networks (CGNN) method  
+This is a Pytorch implementation of our Contrastive Graph Neural Networks (CGNN) method.   
+Codes of baselines are also provided here.  
   
 1. Datasets:   
 We use four banchmarks: Pubmed, Facbook, Coauthor-CS, Coauthor-Phy.  
