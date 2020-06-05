@@ -1,17 +1,17 @@
 # CGNN-master
-*This is a Pytorch implementation of our Contrastive Graph Neural Networks (CGNN) method.*    
-*Codes of baselines are also provided here.*  
+**This is a Pytorch implementation of our Contrastive Graph Neural Networks (CGNN) method.**    
+**Codes of baselines are also provided here.**  
   
-1. Datasets:   
+**1. Datasets:**   
 We use four banchmarks: Pubmed, Facbook, Coauthor-CS, Coauthor-Phy.  
 The transductive learning setting is conducted on Pubmed, Facbook, Coauthor-CS and the inductive learning setting is conducted on Coauthor-Phy.  
 
-2. Requirements:  
+**2. Requirements:**  
 (1) GPU server  
 (2) Necessary packages:  
 python3.5; pytorch=1.4.0; tqdm=4.27.0; tensorboardX=1.8; pandas=0.25; numpy=1.15; networkx=2.2; logger=1.4; scipy=1.1; scikit-learn=0.20  
 
-3. Notes:  
+**3. Notes:**  
 (1) Note that some of the codes may be redundant and are not useful, we will polish them later.  
 (2) Note that some of the codes are based on different released codes, so the same arguement in different .py files may have different meanings.   
 (3) Note that the following comands consist of both training and evaluation, if you do not want to train Ours, you can directly use the trained models we provided in xxxx/src/saved_models/.  
@@ -23,10 +23,10 @@ For example:
 --> CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervisd.py --dataset=coauthor_phy --sampling_percent=0.7 --type=multigcn --nbaseblocklayer=0 --nce_k=1024 --nce_t=0.1  
 
 
-4. We will illustrate how to run the codes as following.  
+**4. We will illustrate how to run the codes as following.**  
 
 In order to run our codes, you need to get in the: xxxx/src/ file first.    
-(1) On Pubmed dataset    
+**(1) On Pubmed dataset**    
 ############################### Baselines ########################################  
 GCN: CUDA_VISIBLE_DEVICES=your_gpu_num python train_new.py --dataset=pubmed --sampling_percent=1.0 --type=multigcn --nbaseblocklayer=0  
 
@@ -75,7 +75,7 @@ Ours(GraphSage): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_grap
 Ours(GAT): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_gat.py --dataset=pubmed --sampling_percent=0.7 --nhiddenlayer=1 --nce_k=1024 --nce_t=0.1  
 
 
-(2) On Facebook dataset  
+**(2) On Facebook dataset**  
 ############################### Baselines ########################################  
 GCN: CUDA_VISIBLE_DEVICES=your_gpu_num python train_new.py --dataset=facebook_page --sampling_percent=1.0 --type=multigcn --nbaseblocklayer=0  
 
@@ -123,7 +123,7 @@ Ours(GraphSage): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_grap
 
 Ours(GAT): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_gat.py --dataset=facebook_page --sampling_percent=0.7 --nhiddenlayer=1 --nce_k=1024 --nce_t=0.1  
 
-(3) On Coauthor-CS dataset  
+**(3) On Coauthor-CS dataset**  
 ############################### Baselines ########################################  
 GCN: CUDA_VISIBLE_DEVICES=your_gpu_num python train_new.py --dataset=coauthor_cs --sampling_percent=1.0 --type=multigcn --nbaseblocklayer=0  
 
@@ -171,7 +171,7 @@ Ours(GraphSage): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_grap
 
 Ours(GAT): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_gat.py --dataset=coauthor_cs --sampling_percent=0.7 --nhiddenlayer=1 --nce_k=1024 --nce_t=0.1  
 
-(4) On Coauthor-Phy dataset  
+**(4) On Coauthor-Phy dataset**  
 ############################### Baselines ########################################  
 GCN: CUDA_VISIBLE_DEVICES=your_gpu_num python train_new.py --dataset=coauthor_phy --sampling_percent=1.0 --type=multigcn --nbaseblocklayer=0  
 
@@ -220,6 +220,6 @@ Ours(GraphSage): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_grap
 Ours(GAT): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_gat.py --dataset=coauthor_phy --sampling_percent=0.7 --nhiddenlayer=1 --nce_k=1024 --nce_t=0.1  
 
 
-Thanks for your interest in our paper. We benefit a lot from codes provided by other researchers, we would like to thank them here.  
+**Thanks for your interest in our paper. We benefit a lot from codes provided by other researchers, we would like to thank them here.**  
 
-Also, this paper is under review now, we will provide more information later.  
+**Also, this paper is under review now, we will provide more information later.**  
