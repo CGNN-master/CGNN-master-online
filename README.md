@@ -219,7 +219,7 @@ Ours(GraphSage): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_grap
 
 Ours(GAT): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_gat.py --dataset=coauthor_phy --sampling_percent=0.7 --nhiddenlayer=1 --nce_k=1024 --nce_t=0.1  
 
-**For codes of other methods such as DeepWalk, Node2Vec, CMV, GCC, they have been provided by the authors and we do not repeat them here**  
+**For codes of other methods such as DeepWalk, Node2Vec, ARWMF, CMV, GCC, they have been provided by the authors and we do not repeat them here**  
 
 **Thanks for your interest in our paper. We benefit a lot from codes provided by other researchers, we would like to thank them here.**  
 
