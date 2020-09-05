@@ -7,7 +7,7 @@ We use four banchmarks: Pubmed, Facbook, Coauthor-CS, Coauthor-Phy.
 The transductive learning setting is conducted on Pubmed, Facbook, Coauthor-CS and the inductive learning setting is conducted on Coauthor-Phy.  
 
 **2. Requirements:**  
-(1) GPU server  
+(1) GPU machine  
 (2) Necessary packages:  
 python3.5; pytorch=1.4.0; tqdm=4.27.0; tensorboardX=1.8; pandas=0.25; numpy=1.15; networkx=2.2; logger=1.4; scipy=1.1; scikit-learn=0.20  
 
@@ -219,6 +219,7 @@ Ours(GraphSage): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_grap
 
 Ours(GAT): CUDA_VISIBLE_DEVICES=your_gpu_num python eval_unsupervised_gat.py --dataset=coauthor_phy --sampling_percent=0.7 --nhiddenlayer=1 --nce_k=1024 --nce_t=0.1  
 
+**For codes of other methods such as DeepWalk, Node2Vec, CMV, GCC, they have been provided by the authors and we do not repeat them here**  
 
 **Thanks for your interest in our paper. We benefit a lot from codes provided by other researchers, we would like to thank them here.**  
 
